@@ -1,14 +1,15 @@
 import "./App.css";
+import About from "./components/About";
+import Home from "./components/Home";
+import Route from "./components/Route";
 import Router from "./components/Router";
-import Routes from "./components/Routes";
 
 function App() {
-  const path = window.location.pathname;
-  console.log(path);
   return (
     <>
       <Router>
-        <Routes />
+        <Route path="/about" element={<About />} />
+        <Route path="/" element={<Home />} />
       </Router>
     </>
   );

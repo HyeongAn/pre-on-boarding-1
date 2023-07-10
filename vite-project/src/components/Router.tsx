@@ -1,22 +1,28 @@
-import { useState } from "react";
-import { routerContext } from "../libs/context.module";
-
-interface RouterProps {
-  children: React.ReactNode;
-}
+import { useEffect, useState } from "react";
+import { RouterContext } from "../libs/context.module";
+import { RouterProps } from "../types/props";
 
 const Router = ({ children }: RouterProps) => {
-  const [path, setPath] = useState(window.location.pathname);
+  const [locationPath, setPath] = useState(window.location.pathname);
 
   const contextValue = {
-    path,
+    locationPath,
     changePath: setPath,
   };
 
+  useEffect(() => {
+    const changePath = (e: PopStateEvent) => {
+      console.log(e);
+      setPath(e.state.path);
+    };
+    window.addEventListener("popstate", changePath);
+    return () => window.removeEventListener("popstate", changePath);
+  }, []);
+
   return (
-    <routerContext.Provider value={contextValue}>
+    <RouterContext.Provider value={contextValue}>
       {children}
-    </routerContext.Provider>
+    </RouterContext.Provider>
   );
 };
 

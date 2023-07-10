@@ -1,11 +1,7 @@
 import { createContext } from "react";
+import { ContextProps } from "../types/context";
 
-interface ContextProps {
-  path: string;
-  changePath: React.Dispatch<React.SetStateAction<string>>;
-}
-
-export const routerContext = createContext<ContextProps>({
-  path: "",
+export const RouterContext = createContext<ContextProps>({
+  locationPath: "",
   changePath: () => undefined,
 });
