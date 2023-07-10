@@ -1,10 +1,10 @@
-import { useNavigate } from "../hooks/useNavigate";
+import { useRouter } from "../hooks/useRouter";
 import Link from "./Link";
 
 const Home = () => {
-  const navigate = useNavigate();
+  const { push } = useRouter();
   const handleClick = () => {
-    navigate("/about");
+    push("/about");
   };
   return (
     <>

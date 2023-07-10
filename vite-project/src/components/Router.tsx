@@ -12,7 +12,6 @@ const Router = ({ children }: RouterProps) => {
 
   useEffect(() => {
     const changePath = (e: PopStateEvent) => {
-      console.log(e);
       setPath(e.state.path);
     };
     window.addEventListener("popstate", changePath);
