@@ -1,4 +1,4 @@
 export interface ContextProps {
   locationPath: string;
-  changePath: React.Dispatch<React.SetStateAction<string>>;
+  setPath: React.Dispatch<React.SetStateAction<string>>;
 }

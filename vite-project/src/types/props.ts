@@ -7,7 +7,6 @@ export interface RouteProps {
   element: React.ReactNode;
 }
 
-export interface LinkProps {
+export interface LinkProps extends RouterProps {
   to: string;
-  children: React.ReactNode;
 }

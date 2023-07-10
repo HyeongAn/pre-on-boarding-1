@@ -7,15 +7,15 @@ const Router = ({ children }: RouterProps) => {
 
   const contextValue = {
     locationPath,
-    changePath: setPath,
+    setPath,
   };
 
   useEffect(() => {
-    const changePath = (e: PopStateEvent) => {
+    const handlePopState = (e: PopStateEvent) => {
       setPath(e.state.path);
     };
-    window.addEventListener("popstate", changePath);
-    return () => window.removeEventListener("popstate", changePath);
+    window.addEventListener("popstate", handlePopState);
+    return () => window.removeEventListener("popstate", handlePopState);
   }, []);
 
   return (

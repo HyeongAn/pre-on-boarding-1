@@ -3,5 +3,5 @@ import { ContextProps } from "../types/context";
 
 export const RouterContext = createContext<ContextProps>({
   locationPath: "",
-  changePath: () => undefined,
+  setPath: () => undefined,
 });
