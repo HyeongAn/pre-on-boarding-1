@@ -2,8 +2,9 @@
 
 ## 정리글
 
-[![image](https://github.com/HyeongAn/pre-on-boarding-1/assets/93849618/290615a5-1e4a-440c-a86b-90f34869d29f)
-](https://raspy-ragdoll-e6d.notion.site/Week-1-1-90827cb3295a4eb5baca3e37b114e33d?pvs=4)
+[Notion으로 보기](https://www.notion.so/Week-1-1-90827cb3295a4eb5baca3e37b114e33d?pvs=4)
+
+
 
 ## React와 History API 사용하여 SPA Router 기능 구현하기
 
