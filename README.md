@@ -1,8 +1,11 @@
 # pre-on-boarding-1
 
-[Notion으로 정리하기](https://raspy-ragdoll-e6d.notion.site/Week-1-1-90827cb3295a4eb5baca3e37b114e33d?pvs=4)
+## 정리글
 
-### React와 History API 사용하여 SPA Router 기능 구현하기
+[![image](https://github.com/HyeongAn/pre-on-boarding-1/assets/93849618/290615a5-1e4a-440c-a86b-90f34869d29f)
+](https://raspy-ragdoll-e6d.notion.site/Week-1-1-90827cb3295a4eb5baca3e37b114e33d?pvs=4)
+
+## React와 History API 사용하여 SPA Router 기능 구현하기
 
 <aside>
 💡 가이드에 따라 코드를 작성하고, 과제 결과물은 각자 깃허브에 public 레포지토리로 업로드 후 디스코드 내 과제 제출 스레드에 링크를 제출해주세요.
