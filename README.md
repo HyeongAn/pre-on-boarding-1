@@ -1,5 +1,7 @@
 # pre-on-boarding-1
 
+[Notion으로 정리하기](https://raspy-ragdoll-e6d.notion.site/Week-1-1-90827cb3295a4eb5baca3e37b114e33d?pvs=4)
+
 ### React와 History API 사용하여 SPA Router 기능 구현하기
 
 <aside>
