@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { RouterContext } from "../libs/context.module";
+import { routerContext } from "../libs/context.module";
 import { RouterProps } from "../types/props";
 
 const Router = ({ children }: RouterProps) => {
@@ -19,9 +19,9 @@ const Router = ({ children }: RouterProps) => {
   }, []);
 
   return (
-    <RouterContext.Provider value={contextValue}>
+    <routerContext.Provider value={contextValue}>
       {children}
-    </RouterContext.Provider>
+    </routerContext.Provider>
   );
 };
 
